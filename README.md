@@ -50,8 +50,8 @@ To install the necessary packages for the backend, run the following command:
      ``` 
 4. **Set up the MongoDB database: You can either use a local MongoDB instance or MongoDB Atlas.**
 5. **Create a .env file in the backend directory with the following content:**
-   ```bash
-   PORT=3000
+```plaintext
+PORT=3000
 MONGODB_URI=mongodb://localhost:27017/ruleEngine
 ```
 6. **Start the server:**
