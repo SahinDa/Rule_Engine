@@ -38,7 +38,7 @@ To install the necessary packages for the backend, run the following command:
 
 ```bash
 npm install
-
+```
 ### Frontend
 ## The frontend consists of three files:
 
