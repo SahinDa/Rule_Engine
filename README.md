@@ -32,61 +32,61 @@ rule-engine/
 
 ## Getting Started
 
-1. Clone the repository:
-   ```bash
-   git clone <repository-url>
-   cd RuleEngine
-Navigate to the backend directory:
+1. Clone the repository:<br>
+   ```bash<br>
+   git clone <repository-url><br>
+   cd RuleEngine<br>
+Navigate to the backend directory:<br><br>
 
-bash
-Copy code
-cd backend
-Install the required packages:
+bash<br>
+Copy code<br>
+cd backend<br>
+Install the required packages:<br><br>
 
-bash
-Copy code
-npm install
-Set up the MongoDB database. You can either use a local MongoDB instance or MongoDB Atlas.
+bash<br>
+Copy code<br>
+npm install<br>
+Set up the MongoDB database. You can either use a local MongoDB instance or MongoDB Atlas.<br><br>
 
-Create a .env file in the backend directory with the following content:
+Create a .env file in the backend directory with the following content:<br><br>
 
-plaintext
-Copy code
-PORT=3000
-MONGODB_URI=mongodb://localhost:27017/ruleEngine
-Start the server:
+plaintext<br>
+Copy code<br>
+PORT=3000<br>
+MONGODB_URI=mongodb://localhost:27017/ruleEngine<br>
+Start the server:<br><br>
 
-bash
-Copy code
-node server.js
-Open index.html in your browser to access the frontend.
+bash<br>
+Copy code<br>
+node server.js<br>
+Open index.html in your browser to access the frontend.<br>
 
-Frontend
+### Frontend
 ## The frontend consists of three files:
 
-index.html: The main HTML file that provides the user interface for rule creation, combination, and evaluation.
-index.js: The JavaScript file handling user interactions, sending requests to the backend, and validating inputs.
-style.css: The CSS file that styles the user interface.
-Frontend Functionalities
-Create Rule: Users can input a rule string (e.g., 'age > 30 AND salary < 70000') and create a rule.
-Combine Rules: Users can combine multiple rules into a single rule using logical operators (AND/OR).
-Evaluate Rule: Users can input an AST rule JSON and a data dictionary to evaluate the rule against the provided data.
-Backend
+index.html: The main HTML file that provides the user interface for rule creation, combination, and evaluation.<br>
+index.js: The JavaScript file handling user interactions, sending requests to the backend, and validating inputs.<br>
+style.css: The CSS file that styles the user interface.<br>
+##  Frontend Functionalities
+Create Rule: Users can input a rule string (e.g., 'age > 30 AND salary < 70000') and create a rule.<br>
+Combine Rules: Users can combine multiple rules into a single rule using logical operators (AND/OR).<br>
+Evaluate Rule: Users can input an AST rule JSON and a data dictionary to evaluate the rule against the provided data.<br>
+### Backend
 ## The backend consists of several components:
 
-helpers/ast.js: Contains helper functions for creating and evaluating the AST from rule strings.
-models/Node.js: Defines the schema for storing the AST in MongoDB.
-routes/rules.js: Defines API endpoints for creating, combining, and evaluating rules.
-server.js: The main server file that initializes the Express app and connects to MongoDB.
+helpers/ast.js: Contains helper functions for creating and evaluating the AST from rule strings.<br>
+models/Node.js: Defines the schema for storing the AST in MongoDB.<br>
+routes/rules.js: Defines API endpoints for creating, combining, and evaluating rules.<br>
+server.js: The main server file that initializes the Express app and connects to MongoDB.<br>
 ## Backend Functionalities
-Create Rule: The /create_rule endpoint accepts a rule string, converts it into an AST, and stores it in the MongoDB database.
-Combine Rules: The /combine_rules endpoint combines multiple rules into a single AST and stores it.
-Evaluate Rule: The /evaluate_rule endpoint evaluates an AST against a data dictionary and returns the result.
+Create Rule: The /create_rule endpoint accepts a rule string, converts it into an AST, and stores it in the MongoDB database.<br>
+Combine Rules: The /combine_rules endpoint combines multiple rules into a single AST and stores it.<br>
+Evaluate Rule: The /evaluate_rule endpoint evaluates an AST against a data dictionary and returns the result.<br>
 ## API Endpoints
-POST /rules/create_rule: Create a rule and store the AST.
-POST /rules/combine_rules: Combine multiple rules into one AST.
-POST /rules/evaluate_rule: Evaluate a rule from JSON AST and data.
+POST /rules/create_rule: Create a rule and store the AST.<br>
+POST /rules/combine_rules: Combine multiple rules into one AST.<br>
+POST /rules/evaluate_rule: Evaluate a rule from JSON AST and data.<br>
 ## How It Works
-The user interacts with the frontend by creating rules, combining them, and evaluating them based on provided data.
-The frontend sends requests to the backend API, which processes the rules, converts them into ASTs, and stores them in the MongoDB database.
-The evaluation returns whether the conditions defined in the rules are satisfied based on the provided data.
+The user interacts with the frontend by creating rules, combining them, and evaluating them based on provided data. <br>
+The frontend sends requests to the backend API, which processes the rules, converts them into ASTs, and stores them in the MongoDB database.<br>
+The evaluation returns whether the conditions defined in the rules are satisfied based on the provided data.<br>
