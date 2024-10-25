@@ -1,22 +1,25 @@
 Rule Engine
 This project is a simple Rule Engine that allows users to create, combine, and evaluate rules based on provided data. It consists of a backend built with Node.js and Express, and a frontend built with HTML, CSS, and JavaScript.
 
+# Rule Engine
+
 ## File Structure
+
+```plaintext
 rule-engine/
-│
 ├── backend/
 │   ├── helpers/
-│   │   └── ast.js           # Helper functions for AST processing
+│   │   └── ast.js            # Helper functions for AST processing
 │   ├── models/
-│   │   └── Node.js          # Mongoose schema for storing AST
+│   │   └── Node.js           # Mongoose schema for storing AST
 │   ├── routes/
-│   │   └── rules.js         # Express routes for rule operations
-│   └── server.js            # Main server file for backend
-│
+│   │   └── rules.js          # Express routes for rule operations
+│   └── server.js             # Main server file for backend
 └── frontend/
-    ├── index.html           # Main HTML file for the frontend interface
-    ├── index.js             # JavaScript file for handling frontend logic
-    └── style.css            # CSS file for styling the frontend
+    ├── index.html            # Main HTML file for the frontend interface
+    ├── index.js              # JavaScript file for handling frontend logic
+    └── style.css             # CSS file for styling the frontend
+
 
 
 ## Technologies Used
