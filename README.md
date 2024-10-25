@@ -32,34 +32,12 @@ rule-engine/
 
 ## Getting Started
 
-1. Clone the repository:<br>
-   ```bash<br>
- -  git clone <repository-url><br>
- -  cd RuleEngine<br>
-#Navigate to the backend directory:<br><br>
+### Install Required Packages
 
-bash<br>
-Copy code<br>
-- cd backend<br>
-- Install the required packages:<br><br>
+To install the necessary packages for the backend, run the following command:
 
-bash<br>
-Copy code<br>
-- npm install<br>
-- Set up the MongoDB database. You can either use a local MongoDB instance or MongoDB Atlas.<br><br>
-
-Create a .env file in the backend directory with the following content:<br><br>
-
-plaintext<br>
-Copy code<br>
-PORT=3000<br>
-MONGODB_URI=mongodb://localhost:27017/ruleEngine<br>
-Start the server:<br><br>
-
-bash<br>
-Copy code<br>
-- node server.js<br>
-- Open index.html in your browser to access the frontend.<br>
+```bash
+npm install
 
 ### Frontend
 ## The frontend consists of three files:
